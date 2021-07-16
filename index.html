@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <script
+      src="https://kit.fontawesome.com/b894a389d0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="/images/logo.svg" alt="logo" />
+      </div>
+
+      <div class="card">
+        <div class="input">
+          <!-- -------------------- -->
+
+          <div class="bill__container">
+            <div class="label__wrapper">
+              <label for="inp__bill">Bill</label>
+            </div>
+
+            <div class="inp__wrapper">
+              <input
+                class="inp__text"
+                type="text"
+                name="inp__bill"
+                id="inp__bill"
+                placeholder="0.00"
+              />
+              <img src="/images/icon-dollar.svg" alt="icon-dollar" />
+            </div>
+          </div>
+
+          <!-- ------------------- -->
+
+          <div class="tip__container">
+            <div class="label__wrapper">
+              <label for="inp__tip">Select Tip %</label>
+            </div>
+
+            <div class="btn__wrapper">
+              <div class="btn tip">10%</div>
+              <div class="btn tip">5%</div>
+              <div class="btn tip btn-active">15%</div>
+              <div class="btn tip">25%</div>
+              <div class="btn tip">50%</div>
+              <input
+                class="inp__text"
+                type="text"
+                name="inp__tip"
+                id="inp__tip"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+
+          <!-- ------------------- -->
+
+          <div class="people__container">
+            <div class="label__wrapper">
+              <label for="inp__people">Number of People</label>
+              <div class="error__msg">Can't be zero</div>
+            </div>
+
+            <div class="inp__wrapper">
+              <input
+                class="inp__text"
+                type="text"
+                name="inp__people"
+                id="inp__people"
+                placeholder="1"
+              />
+              <img src="/images/icon-person.svg" alt="icon-person" />
+            </div>
+          </div>
+        </div>
+
+        <div class="output">
+          <div class="line__wrapper">
+            <div class="line__output">
+              <div class="title__wrapper">
+                <div class="title">Tip Amount</div>
+                <div class="desc">/ person</div>
+              </div>
+              <div class="value">$4.27</div>
+            </div>
+
+            <div class="line__output">
+              <div class="title__wrapper">
+                <div class="title">Total</div>
+                <div class="desc">/ person</div>
+              </div>
+              <div class="value">$32.79</div>
+            </div>
+          </div>
+
+          <div class="btn reset">Reset</div>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
